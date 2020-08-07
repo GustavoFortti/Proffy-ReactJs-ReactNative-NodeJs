@@ -32,7 +32,7 @@
   }
 
   body {
-      background: var(var(--color-background));
+      background: var(--color-background);
   }
 
   #root {
@@ -46,6 +46,7 @@ input,
 button,
 textarea {
     font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
 }
 
 .container {

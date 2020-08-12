@@ -12,7 +12,7 @@ export async function up(knex: Knex) {
             .onDelete('CASCADE'); // Se o usuario for deletado todas as suas aulas seram
 
         table.timestamp('created_at')
-            .defaultTo('now()')
+            .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
             .notNullable();
     });
 }
